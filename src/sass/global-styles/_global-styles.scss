@@ -8,6 +8,22 @@
 
 .button{
     display: block;
+    height: 40px;
+    border: none;
+    padding-left: 21px;
+    padding-right: 21px;
+    border-radius: 20px; 
+    font-size: 14px;
+    font-family: DM Sans;
+    font-weight: bold;
+    line-height: 18px;
+    background-color: #C7133E;
+    color: #ffffff;
+
+    &:hover{
+        background-color: #ECEBEB;
+        color: #D41443;
+    }
 }
 
 .section-sub-title{
@@ -24,7 +40,7 @@
 
 .section-title{
     font-family: Titan One;
-    font-style: normal;
+
     font-weight: normal;
     font-size: 58px;
     line-height: 66px;
@@ -33,3 +49,12 @@
     text-transform: uppercase;
     color: #D41443;
 }
+    .hero-title-start{
+        font-family: Titan One;
+        font-weight: normal;
+        font-size: 38px;
+        line-height: 44px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #ffffff;    
+    }
