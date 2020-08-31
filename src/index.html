@@ -2,12 +2,22 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Это первый Учебный, командный сайт-проект студентов GOIT">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заголовок страницы</title>
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+    <!-- Добавляет только Team-lead !!! -->
+
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/how-its-made.html"></include>
+    <include src="./partials/points-of-sale.html"></include>
+    <include src="./partials/images.html"></include>
+    <include src="./partials/feedback.html"></include>
+    <include src="./partials/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
