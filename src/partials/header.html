@@ -1,5 +1,36 @@
 <header class="header">
-    <!-- тест добавления картинки! Внимание с путями!!! -->
-    <img src="./images/header/logo1x.jpg" alt="">
-    <button class="button" type="button">How it's made?</button>
+    <div class="container header-flex-container">
+        <div class="header-logo">
+            <a href="#" class="header-logo-link">
+                <img src="./images/header/logo1x.png" alt=""><span class="header-logo-title">icecream</span>
+            </a>
+        </div>
+        <div class="header-navigation-wrapper header-flex-container is-close"> <!-- is-close -->
+            <nav class="header-main-navigation is-close"> <!-- is-close -->
+                <ul class="header-main-navigation-list is-close"> <!-- is-close -->
+                    <li class="header-main-navigation-list__item"><a href="#" class="header-main-navigation-list__item-link header-current-link">Home</a></li>
+                    <li class="header-main-navigation-list__item"><a href="#" class="header-main-navigation-list__item-link">About us</a></li>
+                    <li class="header-main-navigation-list__item"><a href="#" class="header-main-navigation-list__item-link">How it’s made?</a></li>
+                    <li class="header-main-navigation-list__item"><a href="#" class="header-main-navigation-list__item-link">Our products</a></li>
+                    <li class="header-main-navigation-list__item"><a href="#" class="header-main-navigation-list__item-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-burger-menu is-close"> <!-- is-close -->
+                <button class="header-burger-button is-close" type="button"> <!-- is-close -->
+                    <svg class="header-burger-menu-svg" width="20" height="20">
+                        <use href="./images/svg/sprite.svg#icon-burger"></use>
+                        <use href="./images/svg/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="header-button is-close"> <!-- is-close -->
+                <button class="button button-light button-arrow" type="button">
+                    <span class="button-title">Buy&nbsp;now</span>
+                    <svg class="arrow" height="8" width="8">
+                        <use href="./images/svg/sprite.svg#icon-arrow-right-button"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
 </header>
