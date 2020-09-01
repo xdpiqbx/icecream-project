@@ -1,0 +1,191 @@
+.how-its-made {
+  background-color: #fff5f6;
+}
+img {
+  display: block;
+}
+// Сброс стилей для абзацев
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+// Контейнер для секции
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 320px) {
+    max-width: 320px;
+    background-color: rgb(182, 112, 154);
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 34px;
+    padding-right: 34px;
+    max-width: 768px;
+    background-color: rgb(29, 226, 240);
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 115px;
+    padding-right: 115px;
+    max-width: 1280px;
+    background-color: rgb(187, 20, 137);
+  }
+}
+
+// Стили для названия секции
+.how-its-made-title {
+  margin-top: 0px;
+  margin-bottom: 26px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.15;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 55px;
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}
+
+// Стили для подназвания секции
+.how-its-made-subtitle {
+  margin-top: 0px;
+  margin-bottom: 15px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+.foto-cow {
+  //   @media screen and (max-width: 319px) {
+  //     width: 100%;
+  //   }
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 74px;
+  }
+}
+.how-its-made-discription-button {
+  padding-left: 30px;
+  padding-right: 30px;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  //   @media screen and (min-width: 1280px) {
+  //
+  //   }
+}
+.how-its-made-title-picture-text {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+// Стили для текста
+.how-its-made-discription1 {
+  margin-bottom: 31px;
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #000000;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.78;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+  }
+}
+.how-its-made-discription2 {
+  margin-bottom: 15px;
+}
+.how-its-made-discription3 {
+  margin-bottom: 21px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
+}
+
+.how-its-made-discription2,
+.how-its-made-discription3 {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #907e82;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.78;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.92;
+  }
+}
+// Кнопка
+.how-its-made-button {
+  display: block;
+  height: 44px;
+  border: none;
+  padding: 11px 37px;
+  border-radius: 22px;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: 15.8px;
+  line-height: 1.33;
+  color: #d41443;
+  background-color: #ffffff;
+  &:hover {
+    background-color: #d41443;
+    color: #ffffff;
+  }
+}
+.how-its-made-button-sign {
+  margin-left: 13px;
+}
