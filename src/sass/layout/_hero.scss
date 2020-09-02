@@ -1,3 +1,104 @@
+$hero-bg: #FFB8CA; // цвет фона
+$white: rgba(255, 255, 255, 1); // белый :)
+$accent: rgba(212, 20, 67, 1); // акцент
+$accent-hover: rgba(199, 19, 62, 1); // фон-ховер на малиновую кнопку
+$white-hover: rgba(236, 235, 235, 1); // фон-ховер на белую кнопку
+$h-font: "Titan One"; //шрифт заголовка
+$main-font: "DM Sans"; // главный шрифт
+
 .hero{
-    background-color: #FFB8CA;
+    background-color: $hero-bg;
+}
+
+h1{
+    font-family: $h-font;
+    font-weight: normal;
+    
+    
+    .hero-title-start{
+        color: $white;
+    }
+    .section-title{
+        text-transform: uppercase;
+        color: $accent;
+    }
+
+}
+
+.header-buttons{
+    display: flex;
+}
+
+.hero-button{
+    border-radius: 20px;
+    font-family: $main-font;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 1.25;
+}
+
+.products-button{
+    background-color: $accent;
+    color: $white;
+    
+}
+
+.how-its-made-button{
+    background-color: $white;
+    color: $accent;
+    
+}
+
+ @media screen and (min-width: 320px){
+
+    h1{
+        font-size: 26px;
+        line-height: 1.154;
+        letter-spacing: 0.04em;
+        
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    h1{
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 22px;
+        line-height: 1.136;    
+    }
+    
+}
+
+@media screen and (min-width: 1280px){
+
+    h1{
+        font-size: 38px;
+        line-height: 1.158;    
+    }
+
+    .hero-button{
+        font-size: 14px;
+        line-height: 1.286;
+    }
+
+    .products-button{
+
+        &:focus,
+        &:hover{
+        background-color: $accent-hover;
+        }
+    }
+    
+    .how-its-made-button{
+
+        &:focus,
+        &:hover{
+        background-color: $white-hover;
+        }
+    }
 }
