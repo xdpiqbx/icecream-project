@@ -1,51 +1,61 @@
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 34px;
-    padding-right: 34px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding-left: 115px;
-    padding-right: 115px;
-  }
-}
-.points-of-sale {
+// СТИЛИ СЕКЦИИ POINTS OF SALE. ЗАДАЮ MIN-HEIGHT,ТАК КАК ЕЕ КОНТЕНТ АБСОЛЮТНО СПОЗИЦИОНИРОВАН
+.points-of-sale-section {
   position: relative;
   width: 100%;
-  height: 700px;
+  min-height: 1444px;
   background-color: #fff5f6;
+  @media screen and (max-width: 767px) {
+    padding-bottom: 85px;
+    min-height: 1444px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-bottom: 85px;
+    min-height: 665px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 85px;
+    min-height: 660px;
+  }
 }
+// ДОП.СТИЛИ НА КОНТЕЙНЕР,СОДЕРЖИМОЕ КОТОРОГО АБСОЛЮТНО СПОЗИЦИОНИРОВАНО
+.points-of-sale-section .container {
+  @media screen and (max-width: 767px) {
+    min-height: 1360px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    min-height: 580px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-height: 575px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .points-of-sale-list {
+    display: flex;
+  }
+}
+
+//  ВЫРАВНИВАНИЕ АБСОЛЮТНО СПОЗИЦИОНИРОВАННОГО КОНТЕНТА ОТНОСИТЕЛЬНО КОНТЕЙНЕРА
 .points-of-sale-wrapper {
   position: absolute;
-  margin: 0 auto;
-  transform: translateY(-84px);
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -84px);
 }
+
 .points-of-sale-list {
-  margin: 0 0 54px 0;
-  list-style: none;
-  padding: 0;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 54px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 81px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 86px;
+  }
 }
+
 .points-of-sale-title {
   display: flex;
   justify-content: center;
@@ -138,6 +148,26 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  @media screen and (max-width: 767px) {
+    padding: 43px 20px;
+    width: 220px;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding: 50px 31px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 51px 44px;
+    width: 330px;
+    &:not(:last-child) {
+      margin-right: 31px;
+    }
+  }
 }
 
 .points-of-sale-button {
@@ -195,27 +225,5 @@ body {
   }
   .points-of-sale-button-bordo {
     margin-bottom: 10px;
-  }
-  .points-of-sale-item {
-    padding: 43px 20px;
-    max-width: 220px;
-    max-height: 427px;
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .points-of-sale-list {
-    display: flex;
-  }
-  .points-of-sale-item {
-    padding: 50px 31px;
-    width: 220px;
-    height: 544px;
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
   }
 }
