@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+/* MAIN font-family: DM Sans; bold 500 + normal*/
+/* Title sub-title font-family: Titan One; font-style: normal;*/
+.section-wrapper {
+  /* Тянется на всю ширину! */
+  width: 100%;
+}
+
+.container {
+  width: 1280px;
+}
+
+.button {
+  display: block;
+  height: 40px;
+  border: none;
+  padding-left: 21px;
+  padding-right: 21px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: DM Sans;
+  font-weight: bold;
+  line-height: 18px;
+  background-color: #C7133E;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #ECEBEB;
+  color: #D41443;
+}
+
+.section-sub-title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+
+.section-title {
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.hero-title-start {
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #FFB8CA;
+}
+
+.hero {
+  background-color: #FFB8CA;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Titan One";
+  font-weight: normal;
+}
+
+h1 .hero-title-start {
+  color: white;
+}
+
+h1 .section-title {
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.hero-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-button {
+  border-radius: 20px;
+  font-family: "DM Sans";
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+.hero-products-button {
+  background-color: #d41443;
+  color: white;
+}
+
+.hero-how-its-made-button {
+  background-color: white;
+  color: #d41443;
+}
+
+@media screen and (min-width: 320px) {
+  .hero {
+    height: 502px;
+  }
+  h1 {
+    font-size: 26px;
+    line-height: 1.154;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .hero-product,
+  .hero-numbers {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 399px;
+  }
+  h1 {
+    font-size: 22px;
+    line-height: 1.136;
+  }
+  .hero-product,
+  .hero-numbers {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    height: 665px;
+  }
+  h1 {
+    font-size: 38px;
+    line-height: 1.158;
+  }
+  .hero-button {
+    font-size: 14px;
+    line-height: 1.286;
+  }
+  .hero-products-button:focus, .hero-products-button:hover {
+    background-color: #c7133e;
+  }
+  .hero-how-its-made-button:focus, .hero-how-its-made-button:hover {
+    background-color: #ecebeb;
+  }
+}
+
+/* Круто будет если вы сможете это сделать списком */
+/* Ментор сказал что для начала вставьте это всё тупо одной картинкой */
+/*# sourceMappingURL=main.css.map */
