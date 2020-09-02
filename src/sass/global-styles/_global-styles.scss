@@ -1,9 +1,42 @@
+html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    min-width: 100vw;
+}
+
 .section-wrapper{
     /* Тянется на всю ширину! */
     width: 100%;
 }
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
     .container{
-        width: 1280px
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        @media screen and (min-width: 768px){
+            width: 775px;
+            padding-left: 34px;
+            padding-right: 34px;
+        }
+        @media screen and (min-width: 1280px){
+            width: 1300px;
+            padding-left: 115px;
+            padding-right: 115px;
+        }
     }
 
 .button{
@@ -17,12 +50,38 @@
     font-family: DM Sans;
     font-weight: bold;
     line-height: 18px;
-    background-color: #C7133E;
-    color: #ffffff;
-
-    &:hover{
+    cursor: pointer;
+    
+    &-light{
+        background-color: #ffffff;
+        color: #D41443;
+    }
+    &-light:hover{
         background-color: #ECEBEB;
         color: #D41443;
+    }
+
+    &-dark{
+        background-color: #D41443;
+        color: #ffffff;
+    }
+
+    &-dark:hover{
+        background-color: #C7133E;
+        color: #ffffff
+    }
+
+    &-arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        padding-left: 37px;
+        padding-right: 37px;
+        .button-title{
+            display: block;
+            margin-right: 12px;
+        }
     }
 }
 
