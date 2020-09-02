@@ -8,6 +8,7 @@ $main-font: "DM Sans"; // главный шрифт
 
 .hero{
     background-color: $hero-bg;
+    width: 100%;
 }
 
 h1{
@@ -25,6 +26,14 @@ h1{
 
 }
 
+
+.hero-list{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
 .header-buttons{
     display: flex;
 }
@@ -37,19 +46,23 @@ h1{
     line-height: 1.25;
 }
 
-.products-button{
+.hero-products-button{
     background-color: $accent;
     color: $white;
     
 }
 
-.how-its-made-button{
+.hero-how-its-made-button{
     background-color: $white;
     color: $accent;
     
 }
 
  @media screen and (min-width: 320px){
+
+    .hero{
+        height: 502px;
+    }
 
     h1{
         font-size: 26px;
@@ -64,17 +77,34 @@ h1{
     h1{
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
+
+    .hero-product,
+    .hero-numbers{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px){
+    .hero{
+        height: 399px;
+    }
+
     h1{
         font-size: 22px;
         line-height: 1.136;    
+    }
+
+    .hero-product,
+    .hero-numbers{
+        display: block;
     }
     
 }
 
 @media screen and (min-width: 1280px){
+    .hero{
+        height: 665px;
+    }
 
     h1{
         font-size: 38px;
@@ -86,7 +116,7 @@ h1{
         line-height: 1.286;
     }
 
-    .products-button{
+    .hero-products-button{
 
         &:focus,
         &:hover{
@@ -94,7 +124,7 @@ h1{
         }
     }
     
-    .how-its-made-button{
+    .hero-how-its-made-button{
 
         &:focus,
         &:hover{

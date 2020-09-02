@@ -73,6 +73,7 @@
 
 .hero {
   background-color: #FFB8CA;
+  width: 100%;
 }
 
 h1 {
@@ -89,6 +90,11 @@ h1 .section-title {
   color: #d41443;
 }
 
+.hero-list {
+  list-style: none;
+  text-decoration: none;
+}
+
 .header-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,17 +109,20 @@ h1 .section-title {
   line-height: 1.25;
 }
 
-.products-button {
+.hero-products-button {
   background-color: #d41443;
   color: white;
 }
 
-.how-its-made-button {
+.hero-how-its-made-button {
   background-color: white;
   color: #d41443;
 }
 
 @media screen and (min-width: 320px) {
+  .hero {
+    height: 502px;
+  }
   h1 {
     font-size: 26px;
     line-height: 1.154;
@@ -125,16 +134,30 @@ h1 .section-title {
   h1 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+  .hero-product,
+  .hero-numbers {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    height: 399px;
+  }
   h1 {
     font-size: 22px;
     line-height: 1.136;
   }
+  .hero-product,
+  .hero-numbers {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .hero {
+    height: 665px;
+  }
   h1 {
     font-size: 38px;
     line-height: 1.158;
@@ -143,10 +166,10 @@ h1 .section-title {
     font-size: 14px;
     line-height: 1.286;
   }
-  .products-button:focus, .products-button:hover {
+  .hero-products-button:focus, .hero-products-button:hover {
     background-color: #c7133e;
   }
-  .how-its-made-button:focus, .how-its-made-button:hover {
+  .hero-how-its-made-button:focus, .hero-how-its-made-button:hover {
     background-color: #ecebeb;
   }
 }
