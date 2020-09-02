@@ -5,9 +5,9 @@
                 <img src="./images/header/logo1x.png" alt=""><span class="header-logo-title">icecream</span>
             </a>
         </div>
-        <div class="header-navigation-wrapper header-flex-container is-close"> <!-- is-close -->
-            <nav class="header-main-navigation is-close"> <!-- is-close -->
-                <ul class="header-main-navigation-list is-close"> <!-- is-close -->
+        <div class="header-navigation-wrapper header-flex-container is-close" data-menu aria-expanded="true"> <!-- is-close -->
+            <nav class="header-main-navigation is-close" data-menu aria-expanded="true"> <!-- is-close -->
+                <ul class="header-main-navigation-list is-close" data-menu aria-expanded="true" > <!-- is-close -->
                     <li class="header-main-navigation-list__item"><a href="#" class="header-main-navigation-list__item-link header-current-link">Home</a></li>
                     <li class="header-main-navigation-list__item"><a href="#" class="header-main-navigation-list__item-link">About us</a></li>
                     <li class="header-main-navigation-list__item"><a href="#" class="header-main-navigation-list__item-link">How it’s made?</a></li>
@@ -15,15 +15,15 @@
                     <li class="header-main-navigation-list__item"><a href="#" class="header-main-navigation-list__item-link">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-burger-menu is-close"> <!-- is-close -->
-                <button class="header-burger-button is-close" type="button"> <!-- is-close -->
-                    <svg class="header-burger-menu-svg" width="20" height="20">
-                        <use href="./images/svg/sprite.svg#icon-burger"></use>
-                        <use href="./images/svg/sprite.svg#icon-close"></use>
+            <div class="header-burger-menu is-close" data-menu aria-expanded="true"> <!-- is-close -->
+                <button class="header-burger-button" type="button" data-menu-button> <!-- is-close -->
+                    <svg class="header-burger-menu-svg" width="20" height="20" aria-label="Переключатель мобильного меню">
+                        <use class="icon-close" href="./images/svg/sprite.svg#icon-close"></use>
+                        <use class="icon-burger" href="./images/svg/sprite.svg#icon-burger"></use>
                     </svg>
                 </button>
             </div>
-            <div class="header-button is-close"> <!-- is-close -->
+            <div class="header-button is-close" data-menu aria-expanded="true"> <!-- is-close -->
                 <button class="button button-light button-arrow" type="button">
                     <span class="button-title">Buy&nbsp;now</span>
                     <svg class="arrow" height="8" width="8">

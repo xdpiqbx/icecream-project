@@ -149,6 +149,18 @@
 .header-burger-button{
     background: none;
     border: none;
+
+    outline: none;
+
+    .icon-close{
+        display: none;
+    }
+    &.is-close .icon-close{
+        display: block;
+    }
+    &.is-close .icon-burger{
+        display: none;
+    }
 }
 
 .header-button{
