@@ -112,9 +112,9 @@ button{
             
             padding-top: 193px;
 
-            .section-title-text{   //у этой куска текста нет размера на макете, подбираю на глаз
-                font-size: 46px;
-                letter-spacing: 0.05em;
+            .section-title-text{   
+                font-size: 48px;
+                line-height: 96.5%;
             }
             
         }
@@ -207,7 +207,12 @@ button{
 
     h1{
         font-size: 22px;
-        line-height: 1.136;    
+        line-height: 1.136; 
+
+        .section-title-text{ 
+            font-size: 34px;
+            line-height: 90.5%;
+        }
     }
 
     .hero-product,
@@ -236,7 +241,16 @@ button{
 
     h1{
         font-size: 38px;
-        line-height: 1.158;    
+        line-height: 1.158;  
+        .section-title-text{   
+            
+        font-size: 58px;
+        line-height: 90.5%;
+        /* or 52px */
+        
+        
+        }
+          
     }
 
     .hero-button{
