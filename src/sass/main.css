@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+/* MAIN font-family: DM Sans; bold 500 + normal*/
+/* Title sub-title font-family: Titan One; font-style: normal;*/
+.section-wrapper {
+  /* Тянется на всю ширину! */
+  width: 100%;
+}
+
+.container {
+  width: 1280px;
+}
+
+.button {
+  display: block;
+  height: 40px;
+  border: none;
+  padding-left: 21px;
+  padding-right: 21px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: DM Sans;
+  font-weight: bold;
+  line-height: 18px;
+  background-color: #C7133E;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #ECEBEB;
+  color: #D41443;
+}
+
+.section-sub-title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFA5BA;
+}
+
+.section-title {
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.hero-title-start {
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header {
+  background-color: #FFB8CA;
+}
+
+.hero {
+  background-color: #FFB8CA;
+}
+
+/* Круто будет если вы сможете это сделать списком */
+/* Ментор сказал что для начала вставьте это всё тупо одной картинкой */
+footer {
+  background-color: #fff5f6;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 97px 114px;
+}
+
+.footer-text-rose {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+
+.footer-text-red {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 58px;
+  line-height: 66px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.footer-tel {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.footer-tel a {
+  color: #d41443;
+  text-decoration: none;
+}
+
+.footer-social-icons ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer-social-icons ul li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer-social-icons ul a {
+  border-radius: 50%;
+  background: #fea5bb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 34px;
+  height: 34px;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+}
+
+.footer-social-icons ul a svg {
+  fill: #fff;
+}
+
+.footer-social-icons ul a:hover {
+  background: #D41443;
+}
+
+.footer-copyright {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 186%;
+  letter-spacing: 0.02em;
+  color: #907e82;
+  text-align: center;
+  border-top: 1px solid #e1e1e1;
+  padding: 10px 0;
+}
+/*# sourceMappingURL=main.css.map */
