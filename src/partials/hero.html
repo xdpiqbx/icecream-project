@@ -1,47 +1,57 @@
-<section class="hero hero-section">
-    <h1>
-        <span class="hero-title-st">ice cream <br>
-                                    made with</span> <br>
-        <span class="section-title-text">passion</span>
-    </h1>
-
-
-    <ul class="hero-list hero-buttons">
-        <li>
-            <button type="button" class="hero-button hero-products-button">Products</button>
-        </li>
-        <li>
-            <button type="button" class="hero-button hero-how-its-made-button">How it’s made?</button>
-        </li>
-    </ul>
-
-    <div class="ellipce"></div>
-    <div class="ice-cream"></div>
-
-    <div class="hero-product">
-
-        <picture>
-            <source>
-            <source>
-            <img src="" alt="">
-        </picture>
-
-        <div class="hero-product-description">
-            <p class="hero-description-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            </p>
-
-            <a href="" class="hero-description-link">        
-            </a>
-        </div>   
+<div class="container hero">
+    <div class="hero-left-side">
+        <div class="hero-title-buttons">
+            <h1 class="hero-main-header">
+                <span class="hero-main-header__light">ice cream<br>made with</span>
+                <span class="hero-main-header__dark">passion</span>
+            </h1>
+            <ul class="hero-button-list">
+                <li class="hero-button-list__item">
+                    <button class="button button-light" type="button">
+                        <span class="button-title">Products</span>
+                    </button>
+                </li>
+                <li class="hero-button-list__item">
+                    <button class="button button-dark" type="button">
+                        <span class="button-title">How&nbsp;it’s&nbsp;made?</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="hero-product">
+            <div class="hero-product-picture">
+                <picture>
+                    <source>
+                    <source>
+                    <img src="./images/hero/desktop-milk.png" alt="" class="hero-main-image-item">
+                </picture>
+            </div>
+            <div class="hero-product-description">
+                <p class="hero-product-description__text">
+                    Lorem ipsum dolor sit amet,<br>
+                    consectetur adipiscing elit,<br>
+                    sed do eiusmod tempor <br> incididunt ut labore et
+                </p>
+                <a class="hero-product-description__link" href="#"></a>
+            </div>   
+        </div>
     </div>
-
-    <ul class="hero-list hero-numbers">
-        <li>
-            <span class="hero-num">16</span><br>cafes
-        </li>
-
-        <li>
-            <span class="hero-num">23</span><br>food trucks
-        </li>
-    </ul>
+    <div class="hero-main-image-wrapper">
+        <div class="hero-ice-cream">
+            <img src="./images/hero/desktop-ice-cream.png" alt="" class="hero-main-image-item">
+        </div>
+        <div class="hero-ellipce"></div>
+    </div>
+    <div class="hero-right-side">
+        <ul class="hero-right-side-list">
+            <li class="hero-right-side-list__item">
+                <span class="hero-num">16</span>
+                <span class="type-of-franchise">cafes</span>
+            </li>
+            <li class="hero-right-side-list__item">
+                <span class="hero-num">23</span>
+                <span class="type-of-franchise">food trucks</span>
+            </li>
+        </ul>
+    </div>
+</div>

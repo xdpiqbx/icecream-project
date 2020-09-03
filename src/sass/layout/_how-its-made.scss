@@ -1,25 +1,7 @@
-// Общий  сброс стилей
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.how-its-made-wrapper{
+  padding-bottom: 139px;
 }
 
-img {
-  display: block;
-}
-.list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 // Паддинги для секции
 .how-its-made {
   margin-left: auto;
@@ -154,8 +136,7 @@ p {
   padding-right: 30px;
   @media screen and (min-width: 768px) {
     padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0px;
+
   }
 }
 

@@ -1,5 +1,7 @@
 // ========== Variables ==========
 
+/*======================================================================Возьми пожалуйста из глобальных переменных*/
+
 $primary-red-color: #d41443;
 $secondary-red-color: #ffa5ba;
 
@@ -8,33 +10,7 @@ $secondary-red-color: #ffa5ba;
 
 $primary-font: 'DM Sans', sans-serif;
 $secondary-font: 'Titan One', cursive;
-
-// ========== Base ==========
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: $primary-font;
-  font-style: normal;
-  padding: 0;
-  margin: 0;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-// ========== Products ==========
+/*======================================================================Возьми пожалуйста из глобальных переменных*/
 
 .products-section {
   width: 100%;

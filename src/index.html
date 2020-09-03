@@ -13,20 +13,35 @@
     <title>Заголовок страницы</title>
   </head>
   <body>
+    
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <!-- Добавляет только Team-lead !!! -->
+    <!-- Тут ничего не менять !!!
+    Добавляет, изменяет, удаляет только Team-lead !!! -->
 
     <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/how-its-made.html"></include>
-    <include src="./partials/points-of-sale.html"></include>
-    <include src="./partials/images.html"></include>
-    <include src="./partials/feedback.html"></include>
+    <section class="hero">
+      <include src="./partials/hero.html"></include>
+    </section>
+    <section class="products">
+      <include src="./partials/products.html"></include>
+    </section>
+    <section class="how-its-made">
+      <include src="./partials/how-its-made.html"></include>
+    </section>
+    <section class="images">
+      <include src="./partials/images.html"></include>
+    </section>
+    <section class="feedback">
+      <include src="./partials/feedback.html"></include>
+    </section>
+    <section class="points-of-sale">
+      <include src="./partials/points-of-sale.html"></include>
+    </section>
     <include src="./partials/footer.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+
     <script src="./js/burger.js"></script>
   </body>
 </html>
