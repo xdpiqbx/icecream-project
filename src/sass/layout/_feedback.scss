@@ -1,20 +1,15 @@
 .feedback 
-{    width: 100%;
-    padding-top: 120px;
+{   padding-top: 120px;
     padding-bottom: 100px;
     background-color:#FFFFFF;
 }
-.feedback-photo {
-    margin-left: auto;
-    margin-right:auto;
-    margin-bottom: 29px;
+.feedback-container{
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .feedback-description {
     background-color: #FAFAFA;
-    padding-right: 57px;
-    padding-left: 66px;
-    padding-top: 43px;
-    padding-bottom: 26px;
 }
 .feedback-text, .feedback-text-name {
 text-align: center;
@@ -27,8 +22,76 @@ font-size: 12px;
 line-height: 2.55;
 color: #000000;
 }
+.feedback-photo {
+    margin-left: auto;
+    margin-right:auto;
+}
+.feedback-quotes {
+    fill: #E1E1E1;
+    width: 54px;
+    height: 40px;
+}
+@media screen and (min-width: 320px) and (max-width:767px) {
+.feedback-photo {
+    margin-bottom: 29px;
+}
+.feedback-description {
+  padding-right: 57px;
+    padding-left: 66px;
+    padding-top: 43px;
+    padding-bottom: 26px;
+}
 .feedback-text-name {
 margin-top: 52px;
 font-size: 14px;
 line-height: 1.86;
+}
+}
+@media screen and (min-width: 768px) {
+     .feedback-container {
+         width: 768px;
+            padding-left: 34px;
+            padding-right: 34px;
+    }
+    .feedback-description {
+padding-right: 80px;
+padding-left: 80px;
+padding-bottom: 34px;
+    }
+    .feedback-photo {
+margin-bottom: 19px;
+    }
+.feedback-text {
+font-size: 14px;
+line-height: 2.16;
+letter-spacing: 0.04em;
+    }
+.feedback-text-name {
+margin-top: 42px;
+font-size: 16px;
+line-height: 1.86;
+}
+}
+@media screen and (min-width: 1280px) {
+.feedback-container {
+ width: 1300px;
+ padding-left: 115px;
+ padding-right: 115px;
+}
+.feedback-text {
+    font-size: 16px;
+line-height: 1.86;
+}
+.feedback-text-name {
+    font-size: 20px;
+line-height: 1.86;
+}
+.feedback-photo {
+    margin-bottom: 15px;
+}
+.feedback-description {
+padding-right: 87px;
+padding-left: 89px;
+ padding-bottom: 39px;
+}
 }
