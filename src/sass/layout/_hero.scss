@@ -176,7 +176,7 @@ button{
         screen and (min-resolution: 2dppx){
             .ice-cream{
                 background-image: url(../images/hero/mob-ice-cream@2x.png);
-                background-size: 100% auto; //подстраиваю картинку под ширину контейнера
+                background-size: 100% auto;     //подстраиваю картинку под ширину контейнера
             }
         }
  
@@ -286,19 +286,45 @@ button{
                     right: -8px;
                     top: -2px;
                     border-radius: 16px;
-                    background-color: #FFFFFF;
+                    background-color: $white;
                     z-index: -1;
-                                }
-            
- 
+                    }
         }
  
         
     }
  
     .hero-product{
+        position: relative;
         display: block;
+        margin-top: 20px;
+        .milk-img{
+            position: absolute;
+            width: 124px;
+            height: 126px;
+            background-image: url(../images/hero/tab-milk.png) ;
+        }
+
+        .hero-product-description{
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 8px;
+            line-height: 150%;
+            color: $white;
+            padding-top: 47px;
+            padding-left: 120px;
+            p{
+                display: inline-block;
+                width: 114px;
+                
+            }
+        }
+      
+
     }
+
+
  
     .ellipce{
             
