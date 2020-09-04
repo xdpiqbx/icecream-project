@@ -8,7 +8,10 @@ html { box-sizing: border-box; }
 
 body{
     margin: 0;
-    min-width: 100vw;
+}
+
+section{
+    overflow: hidden;
 }
 
 .section-wrapper{
