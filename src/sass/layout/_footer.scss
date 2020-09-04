@@ -77,7 +77,6 @@ footer {
   letter-spacing: 0.02em;
   color: #907e82;
   text-align: center;
-
   border-top: 1px solid #e1e1e1;
   padding: 10px 0;
 }
@@ -93,7 +92,6 @@ footer {
 
   .footer-text-rose {
     padding-right: 66px;
-
     font-size: 18px;
     line-height: 1.166;
   }
@@ -147,8 +145,7 @@ footer {
     font-size: 48px;
     line-height:1.145;
     letter-spacing: 0.06em;
-    
-    span {
+        span {
       display: block;
     }
     
@@ -156,11 +153,8 @@ footer {
   .footer-tel {
     font-size: 14px;
    }
-
   .footer-copyright{
     padding-top: 29px;
     padding-bottom: 18px;
-  }
-  
-  
+  } 
 }
