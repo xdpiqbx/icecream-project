@@ -5,7 +5,26 @@
     </div>
 
     <div class="how-its-made-title-picture-text">
-      <picture aria-label="image of cow and milk">
+
+     <picture aria-label="image of cow and milk">
+
+     <source srcset="./images/how-its-made/cow-desktop.webp 1x, 
+     ./images/how-its-made/cow-desktop@2x.webp 2x"
+     media="(min-width: 1280px)"
+     type="image/webp"/>
+
+      <source
+      srcset="./images/how-its-made/cow-tablet.webp 1x,
+      ./images/how-its-made/cow-tablet@2x.webp 2x"
+      media="(min-width: 768px)" 
+      type="image/webp"/>
+
+       <source 
+       srcset="./images/how-its-made/cow-mobile.webp 1x,
+       ./images/how-its-made/cow-mobile@2x.webp 2x" 
+      media="(min-width: 320px)" 
+      type="image/webp"/>
+
         <source
           srcset="
             ./images/how-its-made/cow-desktop.png    1x,
@@ -33,7 +52,7 @@
 
         <img
           class="foto-cow"
-          src="./images/how-its-made/cow-mobile.png"
+          src="./images/how-its-made/cow-tablet.png"
           alt="image of cow and milk"
         />
       </picture>
