@@ -1,4 +1,15 @@
-.how-its-made-wrapper{
+@mixin Font-ff-fw-lh-fs-c($ff, $fw, $lh, $fs, $c) {
+  font-family: $ff;
+  font-weight: $fw;
+  line-height: $lh;
+  font-size: $fs;
+  color: $c;
+}
+$color-title-font: #d41443;
+$black-color-text: #000000;
+$gray-color-text: #907e82;
+
+.how-its-made-wrapper {
   padding-bottom: 139px;
 }
 
@@ -8,12 +19,37 @@
   margin-right: auto;
   background-color: #fff5f6;
   padding-top: 125px;
+  background-repeat: no-repeat;
+  background-size: auto 133px;
+  background-image: url('../images/how-its-made/how-its-made-mobile1.png'),
+    url('../images/how-its-made/how-its-made-mobile2.png');
+  background-position: 0px 766px, 100% 766px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/how-its-made/how-its-made-mobile1@2x.png'),
+      url('../images/how-its-made/how-its-made-mobile2@2x.png');
+  }
   @media screen and (min-width: 768px) {
     padding-top: 130px;
+    background-image: none;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
+    background-position: 0px 342px, 100% 342px;
+    background-size: auto 534px;
+    background-image: url('../images/how-its-made/how-its-made-desktop1.png'),
+      url('../images/how-its-made/how-its-made-desktop2.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/how-its-made/how-its-made-desktop1@2x.png'),
+        url('../images/how-its-made/how-its-made-desktop2@2x.png');
+    }
   }
+  // @media screen and (min-width: 1600px) {
+  //   background-image: none;
+  // }
 }
 
 // Контейнер для секции
@@ -36,38 +72,17 @@
     max-width: 1280px;
   }
 }
-//  background
-.how-its-made .container {
-  // margin-left: auto;
-  // margin-right: auto;
-  background-repeat: no-repeat;
-  // padding-right: -20px;
-  // padding-left: -20px;
-  background-position: 0px 641px;
-  background-image: url(../images/how-its-made/how-its-made-mobile.png);
-  @media screen and (min-width: 768px) {
-    background-image: none;
-  }
-  @media screen and (min-width: 1280px) {
-    background-position: 0px 217px;
-    background-image: url(../images/how-its-made/how-its-made-desktop.png);
-  }
-}
 // Стили для названия секции
 .how-its-made-title {
+  @include Font-ff-fw-lh-fs-c($h-font, normal, 1.15, 34px, $color-title-font);
   margin-top: 0px;
   margin-bottom: 26px;
   padding-left: 40px;
   padding-right: 40px;
 
-  font-family: Titan One;
-  font-size: 34px;
-  line-height: 1.15;
-
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
   @media screen and (min-width: 768px) {
     margin-bottom: 50px;
     font-size: 48px;
@@ -80,22 +95,16 @@
     letter-spacing: 0.06em;
   }
 }
-
 // Стили для подназвания секции
 .how-its-made-subtitle {
+  @include Font-ff-fw-lh-fs-c($h-font, normal, 1.16, 18px, #ffa5ba);
   margin-top: 0px;
   margin-bottom: 15px;
-
   padding-left: 40px;
   padding-right: 40px;
 
-  font-family: Titan One;
-  font-size: 18px;
-  line-height: 1.16;
   text-align: center;
   text-transform: uppercase;
-  color: #ffa5ba;
-
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: 1.15;
@@ -107,11 +116,7 @@
   }
 }
 //  Стили для картинки
-
 .foto-cow {
-  // @media screen and (max-width: 319px) {
-  //   width: 100%;
-  // }
   @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
@@ -135,20 +140,19 @@
   padding-left: 30px;
   padding-right: 30px;
   @media screen and (min-width: 768px) {
+    width: 48.7%;
     padding-top: 50px;
-
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 43.9%;
   }
 }
-
 // Стили для текста
 .how-its-made-discription1 {
+  @include Font-ff-fw-lh-fs-c($main-font, 500, 1.58, 12px, $black-color-text);
   margin-bottom: 30px;
-  font-family: DM Sans;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.58;
-  color: #000000;
-
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.78;
@@ -178,11 +182,7 @@
 
 .how-its-made-discription2,
 .how-its-made-discription3 {
-  font-family: DM Sans;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.58;
-  color: #907e82;
+  @include Font-ff-fw-lh-fs-c($main-font, 500, 1.58, 12px, $gray-color-text);
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.78;
@@ -200,15 +200,16 @@
   align-items: center;
   height: 44px;
   border: none;
-  // padding: 11px 37px;
+  @include Font-ff-fw-lh-fs-c(
+    $main-font,
+    bold,
+    1.33,
+    15.8px,
+    $color-title-font
+  );
   padding-right: 37px;
   padding-left: 37px;
   border-radius: 22px;
-  font-family: DM Sans;
-  font-weight: bold;
-  font-size: 15.8px;
-  line-height: 1.33;
-  color: #d41443;
   background-color: #ffffff;
 }
 //  Свг в кнопке
@@ -218,14 +219,22 @@
   margin-left: 10px;
 }
 //  стили для списка
-
 .how-its-made-list {
   padding-right: 50px;
   margin-top: 39px;
+  background-position: 0px 0px, 0px 195px, 0px 389px;
+  background-size: 33px 50px, 50px 50px, 44px 50px;
   background-repeat: no-repeat;
   background-image: url(../images/how-its-made/glass.png),
     url(../images/how-its-made/apple.png), url(../images/how-its-made/heart.png);
-  background-position: 0px 0px, 0px 195px, 0px 389px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/how-its-made/glass@2x.png),
+      url(../images/how-its-made/apple@2x.png),
+      url(../images/how-its-made/heart@2x.png);
+  }
   @media screen and (min-width: 768px) {
     padding-right: 0px;
     display: flex;
@@ -238,30 +247,21 @@
   }
 }
 .how-its-made-number {
+  @include Font-ff-fw-lh-fs-c($h-font, normal, 1.14, 36px, $color-title-font);
   display: block;
   margin-bottom: 13px;
-  font-family: Titan One;
-  font-size: 36px;
-  line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    // line-height: 1.14;
   }
   @media screen and (min-width: 1280px) {
     font-size: 58px;
-    // line-height: 1.14;
   }
 }
 .how-its-made-text {
-  font-family: DM Sans;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 1.66;
-  color: #000000;
+  @include Font-ff-fw-lh-fs-c($main-font, bold, 1.66, 12px, $black-color-text);
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.71;
@@ -287,7 +287,6 @@
     padding-top: 90px;
   }
 }
-
 .how-its-made-item:not(:last-child) {
   margin-bottom: 38px;
   @media screen and (min-width: 768px) {
