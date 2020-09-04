@@ -1,28 +1,13 @@
-// ========== Variables ==========
-
-/*======================================================================Возьми пожалуйста из глобальных переменных*/
-
-$primary-red-color: #d41443;
-$secondary-red-color: #ffa5ba;
-
-// Шрифт Titan One - везде normal
-// В Шрифте DM Sans normal - 400, 500 это 500, там где bold - пишем 700
-
-$primary-font: 'DM Sans', sans-serif;
-$secondary-font: 'Titan One', cursive;
-/*======================================================================Возьми пожалуйста из глобальных переменных*/
+// Products Styles
 
 .products-section {
   width: 100%;
   padding-top: 120px;
-  // padding-left: 12px;
-  // padding-right: 12px;
   padding-bottom: 100px;
 
   // container
 
   .products-container {
-    // margin: 0 auto;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
@@ -31,7 +16,7 @@ $secondary-font: 'Titan One', cursive;
 
     .products-sub-title,
     .products-title {
-      font-family: $secondary-font;
+      font-family: $h-font;
       font-weight: 400;
       text-transform: uppercase;
     }
@@ -43,7 +28,7 @@ $secondary-font: 'Titan One', cursive;
       margin-bottom: 15px;
       font-size: 18px;
       line-height: 1.17;
-      color: $secondary-red-color;
+      color: $ellipce;
     }
 
     // h2
@@ -54,7 +39,7 @@ $secondary-font: 'Titan One', cursive;
       font-size: 34px;
       line-height: 1.15;
       letter-spacing: 0.04em;
-      color: $primary-red-color;
+      color: $accent;
     }
   }
 }
@@ -71,7 +56,7 @@ $secondary-font: 'Titan One', cursive;
 
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
       }
     }
   }
@@ -122,13 +107,13 @@ $secondary-font: 'Titan One', cursive;
   .product-title {
     margin-top: 0;
     margin-bottom: 30px;
-    font-family: $secondary-font;
+    font-family: $h-font;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fff;
+    color: $white;
   }
 
   // span
@@ -139,7 +124,7 @@ $secondary-font: 'Titan One', cursive;
     height: 6px;
     margin-bottom: 25px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: $white;
   }
 
   // p
@@ -147,12 +132,12 @@ $secondary-font: 'Titan One', cursive;
   .product-text {
     margin-top: 0;
     margin-bottom: 0px;
-    font-family: $primary-font;
+    font-family: $main-font;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.52;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: $white;
   }
 }
 
@@ -218,9 +203,14 @@ $secondary-font: 'Titan One', cursive;
 
     .product-item {
       width: 220px;
+      @media screen and (max-width: 1279px) {
+        justify-content: flex-end;
+      }
 
       &:not(:last-child) {
-        margin-right: 20px;
+        @media screen and (max-width: 1279px) {
+          margin-right: 20px;
+        }
       }
 
       // Image 768
@@ -241,7 +231,7 @@ $secondary-font: 'Titan One', cursive;
       // p
 
       .product-text {
-        line-height: 1.76;
+        line-height: 1.79;
 
         // ...
 
@@ -258,6 +248,9 @@ $secondary-font: 'Titan One', cursive;
 
 @media screen and (min-width: 1280px) {
   .products-section {
+    padding-top: 127px;
+    padding-bottom: 119px;
+
     .products-container {
       width: 1280px;
       padding-left: 115px;
@@ -277,6 +270,7 @@ $secondary-font: 'Titan One', cursive;
         font-size: 58px;
         line-height: 1.14;
         letter-spacing: 0.06em;
+        margin-bottom: 49px;
       }
     }
   }
@@ -284,18 +278,24 @@ $secondary-font: 'Titan One', cursive;
   // ---------- 1280 Products List ----------
 
   .products-list {
+    justify-content: space-between;
+
     .product-item {
-      width: 330px;
+      width: 335px;
       padding-bottom: 50px;
 
-      &:not(:last-child) {
-        margin-right: 30px;
+      &:nth-child(2n) {
+        width: 337px;
+
+        & .product-image {
+          width: 337px;
+        }
       }
 
       // Image 1280
 
       .product-image {
-        width: 330px;
+        width: 335px;
         margin-bottom: 38px;
       }
 
@@ -304,7 +304,14 @@ $secondary-font: 'Titan One', cursive;
       .product-meta {
         padding-left: 44px;
         padding-right: 44px;
-        margin-bottom: 60px;
+        margin-bottom: 56px;
+
+        &::after {
+          width: 329px;
+          height: 525px;
+          left: 50%;
+          transform: translate(-50%);
+        }
 
         // h3
 
@@ -312,6 +319,12 @@ $secondary-font: 'Titan One', cursive;
           margin-bottom: 32px;
           font-size: 30px;
           line-height: 1.13;
+        }
+
+        // span
+
+        .product-circles {
+          margin-bottom: 28px;
         }
 
         // p
