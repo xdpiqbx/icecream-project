@@ -78,8 +78,7 @@ button{
         border-radius: 20px;
         font-family: $main-font;
         font-weight: normal;
-        font-size: 8px;
-        line-height: 1.25;
+    
     }
     
     .hero-products-button{
@@ -204,10 +203,7 @@ button{
         
        
     }
-    
-    
- 
-    
+        
 }
  
 @media screen and (min-width: 768px){
@@ -290,19 +286,13 @@ button{
         position: relative;
         display: block;
         margin-top: 20px;
-        max-width: 226px;
-        .hero-milk-img{
-            position: absolute;
-            width: 124px;
-            height: 126px;
-            background-image: url(../images/hero/tab-milk.png);
-            
-        }
+        
+        
 
         
 
         .hero-product-description{
-            font-family: DM Sans;
+            font-family: $main-font;
             font-style: normal;
             font-weight: normal;
             font-size: 8px;
@@ -323,12 +313,6 @@ button{
 
     }
 
-    
-        
-    
-
-
- 
     .hero-ellipce{
             
         width: 324px;
@@ -337,6 +321,14 @@ button{
         top: 31px;
         background-color: $hero-ellipce;
         border-radius: 50%;
+    }
+
+    .hero-milk-img{
+        position: absolute;
+        width: 124px;
+        height: 126px;
+        background-image: url(../images/hero/tab-milk.png);
+        
     }
  
     .ice-cream{
@@ -349,7 +341,20 @@ button{
         
     }
 
+    .hero-girl  {
+        position: absolute;             //кинула абсолютом чтоб быстрее закончить
+        z-index: 5;                     // можно сделать через флекс
+        left: 575px;
+        top: 266px;
+        width: 168px;
+        height: 133px;
+        background-image: url(../images/hero/tab-girl.png);
+    }  
     
+    .hero-link-img{
+        width: 18px;
+    }
+
  
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -368,23 +373,16 @@ button{
         }
     }
  
-    .hero-girl  {
-        position: absolute;             //кинула абсолютом чтоб быстрее закончить
-        z-index: 5;                     // можно сделать через флекс
-        left: 566px;
-        top: 266px;
-        width: 168px;
-        height: 133px;
-        background-image: url(../images/hero/tab-girl.png);
-    }
+    
 }
  
-// @media screen and (max-width: 1279px){
-//     .hero-section{
-//         padding-right: 34px;
-//         padding-left: 34px;
-//     }
-// }
+ @media screen and (max-width: 1279px){
+    .hero-button{
+        
+        font-size: 8px;
+        line-height: 1.25;
+    }
+}
  
 @media screen and (min-width: 1280px){
     .hero-section{
@@ -392,6 +390,55 @@ button{
         padding-left: 0px;
     
         height: 665px;
+
+        .hero-buttons{
+            
+            margin-top: 7px;
+        }
+        .hero-title-container{
+            
+            padding-top: 171px;
+        }
+    }
+
+    .hero-numbers{
+     
+        text-align: right;
+        color: $white;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.286;
+        .hero-num-one{
+            margin-bottom: 13px;
+            }
+        
+ 
+        .hero-num{
+           
+            font-size: 46px;
+            line-height: 1.152;
+            color: $accent;
+            font-family: $h-font;
+            font-style: normal;
+            font-weight: normal;
+            &::after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    right: -16px;
+                    top: -5px;
+                    border-radius: 16px;
+                    background-color: $white;
+                    z-index: -1;
+                    }
+        }
+ 
+     ////////////////////
+        
     }
  
     h1{
@@ -407,13 +454,20 @@ button{
         }
           
     }
- 
+
+    //////
+
     .hero-button{
+
         font-size: 14px;
         line-height: 1.286;
+        height: 40px;
+        
     }
  
     .hero-products-button{
+        width: 104px;
+        margin-right: 15px;
  
         &:focus,
         &:hover{
@@ -422,12 +476,104 @@ button{
     }
     
     .hero-how-its-made-button{
- 
+        width: 138px;
         &:focus,
         &:hover{
         background-color: $white-hover;
         }
     }
+
+    /////////
+
+    .hero-product{
+        // display: flex;
+        
+        margin-top: 56px;
+        
+        .hero-product-description{
+           
+            font-size: 14px;
+            line-height: 140%;
+            color: $white;
+            padding-top: 57px;
+            padding-left: 218px;
+            p{
+                display: inline-block;
+                width: 200px;
+                height: 78px;
+                margin-bottom: 20px;
+                letter-spacing: 0;
+            }
+            
+        }
+      
+
+    }
+
+    .hero-milk-img{
+        // position: relative;
+        width: 188px;
+        height: 191px;
+        background-image: url(../images/hero/desktop-milk.png);
+        
+    }
+
+    .hero-link-img{
+        width: 26px;
+    }
+    //////////////////////
+
+    .hero-ellipce{
+            
+        width: 538px;
+        height: 538px;
+        left: 475px;
+        top: 52px;
+        background-color: $hero-ellipce;
+        border-radius: 50%;
+    }
+
+    
+ 
+    .ice-cream{
+            
+        width: 236px;
+        height: 557px;
+        left: 594px;
+        top: 108px;
+        background-image: url(../images/hero/desktop-ice-cream.png);
+        
+    }
+
+    .hero-girl  {
+        position: absolute;             //кинула абсолютом чтоб быстрее закончить
+        z-index: 5;                     // можно сделать через флекс
+        width: 293px;
+        height: 232px;
+        left: 878px;
+        top: 433px;
+        background-image: url(../images/hero/desktop-girl.png);
+    } 
+    
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        .ice-cream{
+            background-image: url(../images/hero/desktop-ice-cream@2x.png);
+            background-size: 100% auto;
+        }
+        .hero-milk-img{
+            background-image: url(../images/hero/desktop-milk@2x.png);
+            background-size: 100% auto;
+        }
+        .hero-girl  {
+            background-image: url(../images/hero/desktop-girl@2x.png);
+            background-size: 100% auto;
+        }
+    }
+
+
 }
 
 
