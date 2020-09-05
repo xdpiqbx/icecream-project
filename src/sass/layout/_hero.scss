@@ -189,7 +189,8 @@ button{
                 line-height: 96.5%;
             }
         }
- 
+        
+        .hero-girl,
         .hero-product,
         .hero-numbers{
             display: none;
@@ -322,10 +323,9 @@ button{
 
     }
 
-    .hero-girl{
-        width:158
+    
         
-    }
+    
 
 
  
@@ -362,9 +362,21 @@ button{
             background-image: url(../images/hero/tab-milk@2x.png);
             background-size: 100% auto;
         }
+        .hero-girl  {
+            background-image: url(../images/hero/tab-girl@2x.png);
+            background-size: 100% auto;
+        }
     }
  
-    
+    .hero-girl  {
+        position: absolute;             //кинула абсолютом чтоб быстрее закончить
+        z-index: 5;                     // можно сделать через флекс
+        left: 566px;
+        top: 266px;
+        width: 168px;
+        height: 133px;
+        background-image: url(../images/hero/tab-girl.png);
+    }
 }
  
 // @media screen and (max-width: 1279px){
