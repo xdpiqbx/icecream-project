@@ -1,4 +1,8 @@
-html { box-sizing: border-box; }
+html { 
+    box-sizing: border-box;
+    overflow-x:  hidden;
+    min-width: 320px;
+}
 
 *,
 *::before,
@@ -8,10 +12,6 @@ html { box-sizing: border-box; }
 
 body{
     margin: 0;
-}
-
-section{
-    overflow: hidden;
 }
 
 .section-wrapper{
@@ -63,7 +63,7 @@ p {
 
 .button{
     display: block;
-    height: 40px;
+    height: 44px;
     border: none;
     padding-left: 21px;
     padding-right: 21px;

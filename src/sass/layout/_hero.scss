@@ -1,66 +1,26 @@
-$hero-bg: #FFB8CA; // цвет фона
-$white: rgba(255, 255, 255, 1); // белый :)
-$accent: rgba(212, 20, 67, 1); // акцент
-$accent-hover: rgba(199, 19, 62, 1); // фон-ховер на малиновую кнопку
-$white-hover: rgba(236, 235, 235, 1); // фон-ховер на белую кнопку
-$h-font: "Titan One"; //шрифт заголовка
-$main-font: "DM Sans"; // главный шрифт
-$hero-ellipce: rgba(255, 165, 186, 1); // круги
- 
-///////////////////////////////////////////////////////
-                                    // обнуление стилей
-                                    // обнуление стилей 
- 
-.header{
-    position: absolute;
-}
- 
-body{
-    margin: 0;
-}
- 
-ul {                                 
-    list-style-type: disc;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
-}
- 
-h1 {
-    
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-}
- 
-/////////////////////////////////////////////////////////////
- 
 .hero{
     background-color: $hero-bg;
-    
+    .button{
+        @media screen and (max-width: 1280px){
+            height: 24px;
+            font-size: 8px;
+            line-height: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
 }
  
 h1{
-    font-family: $h-font;
-    font-weight: normal;
-    text-transform: uppercase;
-    
-    
-    
     .hero-title-st{
         color: $white;
     }
-    .hero-section-title-text{
-        
+    .hero-section-title-text{   
         color: $accent;
     }
- 
 }
  
-button{
-    border: none;
-}
+
  
  
 .hero-list{
@@ -68,77 +28,46 @@ button{
     text-decoration: none;
 }
  
- 
- 
 .hero-buttons{
     display: flex;
- 
-    
-    .hero-button{
-        border-radius: 20px;
-        font-family: $main-font;
-        font-weight: normal;
-    
-    }
-    
-    .hero-products-button{
-        background-color: $accent;
-        color: $white;
-        
-    }
-    
-    .hero-how-its-made-button{
-        background-color: $white;
-        color: $accent;
-        
-    }
-}
- 
- 
- 
- 
- 
- 
- 
- @media screen and (min-width: 320px){
-   
-    .hero-section{
-        padding-right: 20px;
-        padding-left: 20px;
-        position: relative;
-        height: 502px;   
-        h1{
-            display: inline-block; // ширина заголовка по контенту
-            
-        }
-    }
- 
- 
-    .hero-button{
-        height: 24px;
-    }
- 
-    .hero-products-button{
-        width: 63px;
+    & li:not(:last-child){
         margin-right: 8px;
     }
- 
-    .hero-how-its-made-button{
-        width: 83px;
-    }
- 
-    .hero-ellipce{
-        position: absolute;
-        z-index: 2;
-    }
- 
-    .ice-cream{
-        position: absolute;
-        z-index: 3;
-    }
- 
 }
- 
+
+.hero-ellipce{
+    position: absolute;
+    z-index: 2;
+}
+
+.ice-cream{
+    position: absolute;
+    z-index: 3;
+}
+
+.hero-section{
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    height: 502px;   
+    h1{
+        display: inline-block; // ширина заголовка по контенту
+    }
+}
+
+.hero-button{
+    height: 24px;
+}
+
+.hero-products-button{
+    width: 63px;
+    margin-right: 8px;
+}
+
+.hero-how-its-made-button{
+    width: 83px;
+}
+
 @media screen and (max-width: 767px){
     .hero-section{
         overflow: hidden;
@@ -276,7 +205,7 @@ button{
                     border-radius: 16px;
                     background-color: $white;
                     z-index: -1;
-                    }
+            }
         }
  
         
@@ -309,8 +238,6 @@ button{
             }
             
         }
-      
-
     }
 
     .hero-ellipce{
@@ -392,11 +319,12 @@ button{
         height: 665px;
 
         .hero-buttons{
-            
             margin-top: 7px;
+            & li:not(:last-child){
+                margin-right: 15px;
+            }
         }
         .hero-title-container{
-            
             padding-top: 171px;
         }
     }
