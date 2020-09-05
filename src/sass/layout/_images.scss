@@ -1,7 +1,64 @@
 /* Круто будет если вы сможете это сделать списком */
 /* Ментор сказал что для начала вставьте это всё тупо одной картинкой */
-.images-wrapper{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 123px;
+.images-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 123px;
+  position: relative;
+
+  & img:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 171px;
+    left: 0;
+    top: 0;
+    background-color: #fff5f6;
+    position: absolute;
+  }
+}
+
+.images-wrapper li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.images-wrapper-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.images-wrapper-list-four {
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 479px) {
+  .images-wrapper-list {
+    max-width: 287px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .images-wrapper-list {
+    max-width: 620px;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .images-wrapper-list {
+    width: auto;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .images-wrapper-list {
+    max-width: 1010px;
+    height: 100%;
+  }
 }
