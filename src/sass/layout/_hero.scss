@@ -5,7 +5,7 @@ $accent-hover: rgba(199, 19, 62, 1); // фон-ховер на малинову�
 $white-hover: rgba(236, 235, 235, 1); // фон-ховер на белую кнопку
 $h-font: "Titan One"; //шрифт заголовка
 $main-font: "DM Sans"; // главный шрифт
-$ellipce: rgba(255, 165, 186, 1); // круги
+$hero-ellipce: rgba(255, 165, 186, 1); // круги
  
 ///////////////////////////////////////////////////////
                                     // обнуление стилей
@@ -39,9 +39,6 @@ h1 {
 .hero{
     background-color: $hero-bg;
     
-    
-    
-    
 }
  
 h1{
@@ -54,7 +51,7 @@ h1{
     .hero-title-st{
         color: $white;
     }
-    .section-title-text{
+    .hero-section-title-text{
         
         color: $accent;
     }
@@ -109,11 +106,6 @@ button{
     .hero-section{
         padding-right: 20px;
         padding-left: 20px;
-    }
- 
-    
- 
-    .hero{
         position: relative;
         height: 502px;   
         h1{
@@ -121,6 +113,7 @@ button{
             
         }
     }
+ 
  
     .hero-button{
         height: 24px;
@@ -135,7 +128,7 @@ button{
         width: 83px;
     }
  
-    .ellipce{
+    .hero-ellipce{
         position: absolute;
         z-index: 2;
     }
@@ -148,16 +141,16 @@ button{
 }
  
 @media screen and (max-width: 767px){
-    .hero{
+    .hero-section{
         overflow: hidden;
  
-        .ellipce{
+        .hero-ellipce{
             
             left: 36px;
             top: 83px;
             width: 346px;
             height: 344px;
-            background-color: $ellipce;
+            background-color: $hero-ellipce;
             border-radius: 50%;
         }
  
@@ -191,7 +184,7 @@ button{
             
             padding-top: 193px;
  
-            .section-title-text{   
+            .hero-section-title-text{   
                 font-size: 48px;
                 line-height: 96.5%;
             }
@@ -221,12 +214,10 @@ button{
     .hero-section{
         padding-right: 34px;
         padding-left: 34px;
-    }
     
-    .hero{
         height: 399px;
  
-        .title-container{
+        .hero-title-container{
             display:flex;
             justify-content: space-between;
             padding-top: 102px;
@@ -248,7 +239,7 @@ button{
         
         
  
-        .section-title-text{ 
+        .hero-section-title-text{ 
             font-size: 34px;
             line-height: 90.5%;
         }
@@ -298,41 +289,53 @@ button{
         position: relative;
         display: block;
         margin-top: 20px;
-        .milk-img{
+        max-width: 226px;
+        .hero-milk-img{
             position: absolute;
             width: 124px;
             height: 126px;
-            background-image: url(../images/hero/tab-milk.png) ;
+            background-image: url(../images/hero/tab-milk.png);
+            
         }
+
+        
 
         .hero-product-description{
             font-family: DM Sans;
             font-style: normal;
             font-weight: normal;
             font-size: 8px;
-            line-height: 150%;
+            line-height: 12px;
             color: $white;
             padding-top: 47px;
             padding-left: 120px;
             p{
                 display: inline-block;
                 width: 114px;
-                
+                height: 48px;
+                margin-bottom: 7px;
+                letter-spacing: 0;
             }
+            
         }
       
 
     }
 
+    .hero-girl{
+        width:158
+        
+    }
+
 
  
-    .ellipce{
+    .hero-ellipce{
             
         width: 324px;
         height: 322px;
         left: 307px;
         top: 31px;
-        background-color: $ellipce;
+        background-color: $hero-ellipce;
         border-radius: 50%;
     }
  
@@ -345,12 +348,18 @@ button{
         background-image: url(../images/hero/tab-ice-cream.png);
         
     }
+
+    
  
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx){
         .ice-cream{
             background-image: url(../images/hero/tab-ice-cream@2x.png);
+            background-size: 100% auto;
+        }
+        .hero-milk-img{
+            background-image: url(../images/hero/tab-milk@2x.png);
             background-size: 100% auto;
         }
     }
@@ -378,7 +387,7 @@ button{
     h1{
         font-size: 38px;
         line-height: 1.158;  
-        .section-title-text{   
+        .hero-section-title-text{   
             
         font-size: 58px;
         line-height: 90.5%;
@@ -520,7 +529,7 @@ button{
 //                 z-index: 1;
 //             }
 
-//             .hero-ellipce{
+//             .hero-hero-ellipce{
 //                 position: absolute;
 //                 overflow: hidden;
 //                 top: -10px;
