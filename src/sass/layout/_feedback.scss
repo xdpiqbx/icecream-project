@@ -1,15 +1,11 @@
 .feedback{
     padding-bottom: 100px;
     background-color:#FFFFFF;
-}
-
-.feedback-container{
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-bottom: 86px;
 }
 
 .feedback-photo {
+    margin-bottom: 29px;
     margin-left: auto;
     margin-right:auto;
 }
@@ -17,6 +13,11 @@
 .feedback-description {
     position: relative;
     background-color: #FAFAFA;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 43px 66px 26px 57px;
+    width: 280px;
+    height: 308px;
 }
 
 .feedback-text, .feedback-text-name {
@@ -31,6 +32,12 @@
     color: #000000;
 }
 
+.feedback-text-name{
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.86;
+}
+
 .feedback-wrapper-for-text{
     position: relative;
     background-color: transparent;
@@ -38,10 +45,11 @@
 
 .feedback-text {
     position: relative;
-/*     border: 1px solid red; */
     z-index: 1;
     text-decoration-style: solid;
     text-decoration-color: #E1E1E1;
+    letter-spacing: 0;
+    border-bottom: unset;
 }
 
 .feedback-stripes{
@@ -62,12 +70,15 @@
     fill: #E1E1E1;
     width: 54px;
     height: 40px;
+    top: 28px;
+    left: 61px;
 }
 
 .feedback-circle {
     display: flex; 
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .feedback-circle-icon {
@@ -86,6 +97,7 @@
     align-items: center;
     padding-left: 0px;
     margin-bottom: 0px;
+    margin-top: 30px;
 }
 
 .feedback-icons-label:not(:last-child) {
@@ -106,48 +118,9 @@
     background: #D9D9D9;
 }
 
-@media screen and (min-width: 320px) and (max-width:767px) {
-    .feedback-photo {
-        margin-bottom: 29px;
-    }
-
-    .feedback-description {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 43px 66px 26px 57px;
-        width: 280px;
-        height: 308px;
-    }
-
-    .feedback-quotes {
-        top: 28px;
-        left: 61px;
-    }
-
-    .feedback-text {
-        letter-spacing: 0;
-        border-bottom: unset;
-    }
-
-    .feedback-circle {
-        margin-top: 30px;
-    }
-
-    .feedback-text-name {
-        margin-top: 18px;
-        font-size: 14px;
-        line-height: 1.86;
-    }
-    .feedback-icons {
-        margin-top: 30px;
-    }
-}
-
 @media screen and (min-width: 768px) {
-    .feedback-container {
-        width: 768px;
-        padding-left: 34px;
-        padding-right: 34px;
+    .feedback{
+        margin-bottom: 119px;
     }
 
     .feedback-photo {
@@ -192,11 +165,9 @@
 
 
 @media screen and (min-width: 1280px) {
-    .feedback-container {
-        width: 1300px;
-        padding-left: 115px;
-        padding-right: 115px;
-    }
+    .feedback{
+        margin-bottom: 132px;
+    } 
 
     .feedback-description {
         margin-left: auto;

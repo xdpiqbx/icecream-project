@@ -7,3 +7,6 @@ $h-font: "Titan One"; //шрифт заголовка
 $main-font: "DM Sans"; // главный шрифт
 $ellipce: rgba(255, 165, 186, 1);
 $hero-ellipce: rgba(255, 165, 186, 1); // круги
+
+$_glb_transition-duration-time: 250ms;
+$_glb_cubic-hover: cubic-bezier(0.4, 0, 0.2, 1);

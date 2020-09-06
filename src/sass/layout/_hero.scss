@@ -1,7 +1,7 @@
 .hero{
     background-color: $hero-bg;
     .button{
-        @media screen and (max-width: 1280px){
+        @media screen and (max-width: 1279px){
             height: 24px;
             font-size: 8px;
             line-height: 10px;
@@ -9,19 +9,23 @@
             padding-right: 15px;
         }
     }
+    .container{
+        width: 320px;
+        @media screen and (min-width: 768px){
+            width: 768px;
+        }
+        @media screen and (min-width: 1280px){
+            width: 1280px;
+        }
+    }
 }
  
-h1{
-    .hero-title-st{
-        color: $white;
-    }
-    .hero-section-title-text{   
-        color: $accent;
-    }
+.hero-title-st{
+    color: $white;
 }
- 
-
- 
+.hero-section-title-text{
+    color: $accent;
+}
  
 .hero-list{
     list-style: none;
@@ -46,8 +50,6 @@ h1{
 }
 
 .hero-section{
-    padding-right: 20px;
-    padding-left: 20px;
     position: relative;
     height: 502px;   
     h1{
@@ -71,7 +73,7 @@ h1{
 @media screen and (max-width: 767px){
     .hero-section{
         overflow: hidden;
- 
+    
         .hero-ellipce{
             
             left: 36px;
@@ -81,7 +83,7 @@ h1{
             background-color: $hero-ellipce;
             border-radius: 50%;
         }
- 
+    
         .ice-cream{
             
             left: 117px;
@@ -91,7 +93,7 @@ h1{
             background-image: url(../images/hero/mob-ice-cream.png);
             
         }
- 
+    
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx){
@@ -100,8 +102,8 @@ h1{
                 background-size: 100% auto;     //подстраиваю картинку под ширину контейнера
             }
         }
- 
- 
+    
+    
         h1{
             position: relative;
             z-index: 4;  
@@ -111,7 +113,7 @@ h1{
             letter-spacing: 0.04em;
             
             padding-top: 193px;
- 
+    
             .hero-section-title-text{   
                 font-size: 48px;
                 line-height: 96.5%;
@@ -123,23 +125,24 @@ h1{
         .hero-numbers{
             display: none;
         }
- 
+    
         .hero-buttons{
             position: absolute;
             z-index: 4; 
             margin-top: 19px;
         }
-        
-       
     }
-        
+}
+
+.hero-title-container{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 102px;
 }
  
 @media screen and (min-width: 768px){
  
     .hero-section{
-        padding-right: 34px;
-        padding-left: 34px;
     
         height: 399px;
  
@@ -152,7 +155,6 @@ h1{
         
  
         .hero-buttons{
-            
             margin-top: 8px;
         }
    
@@ -313,11 +315,7 @@ h1{
  
 @media screen and (min-width: 1280px){
     .hero-section{
-        padding-right: 0px;
-        padding-left: 0px;
-    
         height: 665px;
-
         .hero-buttons{
             margin-top: 7px;
             & li:not(:last-child){

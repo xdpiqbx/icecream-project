@@ -48,16 +48,16 @@ p {
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
+        width: 100%;
 
         @media screen and (min-width: 768px){
-            width: 775px;
             padding-left: 34px;
             padding-right: 34px;
         }
         @media screen and (min-width: 1280px){
-            width: 1300px;
             padding-left: 115px;
             padding-right: 115px;
+            width: 1280px;
         }
     }
 
@@ -73,7 +73,8 @@ p {
     font-weight: bold;
     line-height: 18px;
     cursor: pointer;
-    
+    transition-duration: $_glb_transition-duration-time; 
+    transition-timing-function: $_glb_cubic-hover;
     &-light{
         background-color: #ffffff;
         color: #D41443;

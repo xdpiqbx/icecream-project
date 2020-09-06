@@ -4,13 +4,21 @@
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
+    .container{
+        min-width: 320px;
+        @media screen and (min-width: 768px){
+            min-width: 768px;
+        }
+        @media screen and (min-width: 1280px){
+            min-width: 1280px;
+        }
+    }
 }
 
 .header-content-wrapper{
     position: relative;
     background-color: transparent;
     min-width: 320px;
-    width: 100%;
     font-family: DM Sans;
     color: #ffffff;
     padding-top: 6px;
@@ -40,6 +48,7 @@
     top: unset;
     flex-grow: 1;
     background-color: transparent;
+
     &.is-open{
         position: absolute;
         right: -20px;
@@ -57,7 +66,7 @@
         &.is-open{
             top: -38px;
             right: -34px;
-            height: 100vh;
+            height: 500px;
         }
     }
 
@@ -86,6 +95,7 @@
 
 
 .header-logo{
+
     margin-right: 0px;
     width: auto;
     @media screen and (min-width: 1280px){
@@ -125,14 +135,17 @@
 .header-main-navigation-list{
     display: flex;
     font-weight: bold;
+    visibility: hidden;
+    width: 0;
     display: none;
     &.is-open{
         display: flex;
-        display: block;
+        visibility: unset;
         flex-direction: column;
     }
     @media screen and (min-width: 1280px){
         display: flex;
+        visibility: unset;
         width: 100%;
         &.is-open{
             display: flex;
@@ -150,11 +163,13 @@
     &-link{
         color: #ffffff;
         text-decoration: none;
+        transition-duration: $_glb_transition-duration-time; 
+        transition-timing-function: $_glb_cubic-hover;
         &:hover{
             color: #D41443;
         }
     }
-    @media screen and (max-width: 1280px){
+    @media screen and (max-width: 1279px){
         padding-left: 24px;
         margin-right: 0;
         padding-top:11px;
@@ -183,11 +198,13 @@
     }
     @media screen and (min-width: 768px){
         margin-right: 30px;
+        &.is-open{
+            margin-right: 0;
+        }
     }
-    @media screen and (min-width: 1281px){
+    @media screen and (min-width: 1280px){
         display: none;
     }
-
 }
 
 .header-burger-button{
